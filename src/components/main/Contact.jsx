@@ -3,8 +3,8 @@ import ContactForm from "@/forms/ContactForm";
 const Contact = () => {
   return (
     <section
-      className="px-6 md:px-12 py-20 bg-gradient-to-br from-black
-     via-neutral-900 to-neutral-950 ">
+      className="md:px-12 py-20 bg-gradient-to-br from-black
+     via-neutral-900 to-neutral-950">
       <div className=" bg-black text-white rounded-sm w-full lg:grid grid-cols-3">
         <div className="p-8">
           <img

@@ -1,17 +1,19 @@
 import { useState } from "react";
+import { useRouter } from "next/router";
+import { BiLoaderAlt } from "react-icons/bi";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
+
 import { ClientForm } from "@/forms/ClientForm";
 import { BusinessForm } from "@/forms/BusinessForm";
 import { MessageForm } from "@/forms/MessageForm";
 import { ProjectForm } from "@/forms/ProjectForm";
 import { useSurvey } from "@/hooks/useSurvey";
-import { useRouter } from "next/router";
 import axios from "axios";
 import * as Form from "@radix-ui/react-form";
 
 const INITIAL_DATA = {
-  order: "STARTER WEBSITE (Free)",
+  order: "STARTER ($0.00)",
   name: "",
   phone: "",
   email: "",
@@ -24,6 +26,7 @@ const INITIAL_DATA = {
 
 function Survey() {
   const router = useRouter();
+  const [loading, setLoading] = useState(false);
   const [data, setData] = useState(INITIAL_DATA);
 
   function updateFields(fields) {
@@ -43,7 +46,7 @@ function Survey() {
   const sendEmail = async (e) => {
     e.preventDefault();
     if (!isLastStep) return next();
-    router.push({ pathname: "/success", query: data });
+    setLoading(true)
 
     //Send data over to server
     const payload = data;
@@ -58,6 +61,8 @@ function Survey() {
     } catch (err) {
       console.log("error: ", err);
     }
+
+    router.push({ pathname: "/success", query: data });
   };
 
   const currentStep = currentStepIndex + 1;
@@ -115,9 +120,15 @@ function Survey() {
             }
           >
             {isLastStep ? (
-              <div className="flex items-center justify-center gap-2 font-normal tracking-wide">
-                <span className="-mt-1">Finish</span>
-                <FaCheck size={16} />
+              <div>
+                {loading ? (
+                  <BiLoaderAlt className="mx-auto animate-spin delay-500" />
+                ) : (
+                  <div className="flex items-center justify-center gap-2 font-normal tracking-wide">
+                    <span className="-mt-1">Finish</span>
+                    <FaCheck size={16} />
+                  </div>
+                )}
               </div>
             ) : (
               <div className="flex items-center justify-center gap-2 font-normal tracking-wide">

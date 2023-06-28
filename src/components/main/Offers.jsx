@@ -17,7 +17,7 @@ const Offers = () => {
 
         <div className="col-span-10 lg:grid grid-cols-3 gap-6">
           <div
-            className="m-10 md:mx-32 lg:mx-0 p-8 bg-sky-100 text-black h-full  
+            className="my-12 mx-4 md:mx-32 lg:mx-0 p-8 bg-sky-100 text-black h-full  
             rounded-sm grid place-items-center drop-shadow shadow-lg hover:shadow-xl">
             <div className="text-center pb-4 w-full border-b border-sky-400">
               <h4 className="text-xl font-medium tracking-widest bg-sky-200 p-2 mb-2 rounded-sm">
@@ -54,14 +54,14 @@ const Offers = () => {
             <Link href="/get-starter-website">
               <button
                 className="text-xl text-white font-medium bg-black py-2 w-48
-             rounded-full tracking-wide border-2 hover:bg-opacity-80">
+             rounded-full tracking-wide border-2 hover:bg-slate-800 active:bg-slate-950">
                 Apply
               </button>
             </Link>
           </div>
 
           <div
-            className="m-10 md:mx-32 lg:mx-0 p-8 bg-sky-200 text-black h-full  
+            className="my-12 mx-4 md:mx-32 lg:mx-0 p-8 bg-sky-200 text-black h-full  
             rounded-sm grid place-items-center drop-shadow shadow-lg hover:shadow-xl">
             <div className="text-center pb-4 w-full border-b border-sky-50">
               <h4 className="text-xl font-medium tracking-widest bg-sky-100 p-2 mb-2 rounded-sm">
@@ -100,14 +100,14 @@ const Offers = () => {
             <Link href="/get-premium-website">
               <button
                 className="text-xl font-medium bg-black text-white py-2 w-48
-             rounded-full tracking-wide border-2 hover:bg-opacity-80">
+             rounded-full tracking-wide border-2 hover:bg-slate-800 active:bg-slate-950">
                 Order Now
               </button>
             </Link>
           </div>
 
           <div
-            className="m-10 md:mx-32 lg:mx-0 p-8 bg-neutral-800 bg-opacity-60 h-full  
+            className="my-12 mx-4 md:mx-32 lg:mx-0 p-8 bg-neutral-800 bg-opacity-60 h-full  
             rounded-sm grid place-items-center border">
             <div
               className="flex flex-col items-center justify-center gap-2.5 p-4 text-white
@@ -127,7 +127,7 @@ const Offers = () => {
             <Link href="#contact">
               <button
                 className="text-xl text-black font-medium bg-gray-100 py-2 w-48 rounded-full 
-                tracking-wide border hover:bg-gray-300">
+                tracking-wide border hover:bg-slate-300 active:bg-white">
                 Contact Us
               </button>
             </Link>

@@ -9,7 +9,7 @@ const Footer = () => {
       </div>
       <div>
         <Link href="/terms">
-          <span className="block  hover:text-gray-400">
+          <span className="inline-block hover:text-gray-400">
             Privacy Policy | Terms
           </span>
         </Link>

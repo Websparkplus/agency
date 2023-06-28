@@ -6,11 +6,11 @@ const Hero = () => {
     <section className="mx-6 md:mx-12 lg:mx-24 mt-16 lg:mt-0 lg:h-[85vh] lg:grid place-content-center">
       <div className="lg:flex items-center justify-center">
         <div className="lg:w-1/2">
-          <h1 className="text-5xl font-semibold">
+          <h1 className="text-5xl font-semibold lg:w-[28rem]">
             <span
               className="bg-gradient-to-r from-sky-300 via-sky-200 to-white font-bold
               inline-block text-transparent bg-clip-text">
-              Exceptional Web <br /> Solutions That <br /> Make A Difference
+              Exceptional Web Solutions That Make A Difference
             </span>
           </h1>
 
@@ -22,7 +22,7 @@ const Hero = () => {
           <Link href="#offers">
             <button
               className="pl-6 md:pl-12 lg:pl-24 flex items-center gap-0.5 h-16 lg:h-20 relative right-6 md:right-12 lg:right-24
-             bg-sky-200 bg-opacity-10 hover:bg-opacity-20">
+             bg-slate-800 hover:bg-slate-600 active:bg-slate-800 transition-colors duration-200">
               <div className="h-16 lg:h-20 px-6 text-xl tracking-widest font-bold grid place-items-center uppercase">
                 Start A Project
               </div>

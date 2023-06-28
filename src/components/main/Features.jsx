@@ -5,7 +5,7 @@ import { MdOutlineRocketLaunch } from "react-icons/md";
 
 export default function Features() {
   return (
-    <section className="px-6 md:px-12 lg:px-24 py-20 my-12">
+    <section className="md:px-12 lg:px-24 py-20 my-12">
       <div className="bg-gradient-to-br from-black via-neutral-900 to-neutral-950 px-10 py-16 rounded-sm">
         <h2
           className="mb-4 mx-8 pb-4 text-3xl lg:text-4xl text-gray font-bold 

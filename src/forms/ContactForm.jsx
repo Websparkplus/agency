@@ -28,6 +28,7 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    formik.resetForm();
 
     //Send data over to server
     const payload = formik.values;
@@ -42,8 +43,6 @@ const ContactForm = () => {
     } catch (err) {
       console.log("error: ", err);
     }
-
-    formik.resetForm();
   };
 
   return (

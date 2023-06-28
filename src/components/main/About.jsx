@@ -5,7 +5,7 @@ const About = () => {
     <section
       id="about"
       className="bg-gradient-to-br from-black via-neutral-900 to-neutral-950 
-      px-10 text-white">
+      px-4 text-white">
       <div className="px-6 md:px-12 lg:px-24 py-20">
         <div className="my-6">
           <h2 className="text-3xl lg:text-4xl font-bold tracking-widest">

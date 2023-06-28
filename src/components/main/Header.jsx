@@ -13,8 +13,8 @@ export default function Header() {
 
   return (
     <header
-      className="px-6 md:px-12 lg:px-24 flex items-center justify-between sticky
-   top-0 z-50 bg-black text-gray-100 h-[15vh] border-b border-neutral-800">
+      className="p-6 md:px-12 lg:px-24 flex items-center justify-between sticky
+   top-0 z-50 bg-black text-gray-100 lg:h-[15vh] border-b border-neutral-800">
       <Link href="/">
         <img
           src="/main/logo-black.jpg"
@@ -77,8 +77,8 @@ export default function Header() {
           <a href="/#contact">
             <button
               onClick={handleNav}
-              className="block p-2 ml-4 w-40 border-2 border-sky-100 font-medium 
-            rounded-sm text-black bg-gradient-to-r from-sky-300 to-sky-100 hover:border-b-4">
+              className="block p-2 ml-4 w-40 border-2 border-sky-100 font-medium rounded-sm
+               text-black bg-gradient-to-r from-sky-300 to-sky-100 hover:border-b-4">
               <span>Get In Touch</span>
             </button>
           </a>
@@ -104,12 +104,6 @@ export default function Header() {
         }>
         <div className="flex flex-col justify-center items-center h-full relative w-full z-50 text-center">
           <ul>
-            <li className="text-3xl my-1 p-2 w-48 text-gray-200 tracking-wider hover:bg-neutral-800">
-              <a href="/">
-                <span onClick={handleNav}>Home</span>
-              </a>
-            </li>
-
             <li className="text-3xl my-1 p-2 w-48 text-gray-200 tracking-wider hover:bg-neutral-800">
               <a href="/#services">
                 <span onClick={handleNav}>Services</span>
